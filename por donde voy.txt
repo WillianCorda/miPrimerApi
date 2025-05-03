@@ -4,3 +4,4 @@ termine base de datos(esta en xammp)
 sigue products en minuto 16:54
 hice el metodo create() funciona
 borre del index el metodo put y delete ""hay que hacerlo denuevo""
+recorda que la base de datos la cargas usando phpMyadmin por lo que tener que preder xammp, pero que el servidor lo levantas desde la consola con "php -S localhost:8000" sin comillas
