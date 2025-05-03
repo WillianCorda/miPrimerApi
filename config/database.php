@@ -13,8 +13,8 @@ class DataBase {
 
         // try catch para ejecutar y si hay un error poder atraparlo
         try {
-            $this->conn = new PDO("mysql:host".$this->host . "dbname=" . $this->db_name, $this->username, $this->password);
-            $this->conn->exec("set name utf8");
+            $this->conn = new PDO("mysql:host=".$this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->exec("SET NAMES 'utf8'");
         } catch (\Throwable $th) {
             echo "Error en la conexion: " . $th->getMessage();
             
